@@ -1,0 +1,13 @@
+body{
+  color: white;
+  background: url(images/bg1.jpg) left bottom fixed repeat-x;
+  background-color: grey;
+}
+h1 {
+  margin-top:50px;
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+  line-height: 25px;
+}

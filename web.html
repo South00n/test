@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      background-color: rgb(51,51,51);
+    }
+    .container{
+      margin: 20px auto;
+      width: 700px;
+      box-sizing: border-box;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding:10px;
+    }
+    header>ul{
+      display: flex;
+      list-style: none;
+    }
+    header>ul>li{
+      margin-right: 15px;
+    }
+    header>ul>li>a{
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      padding:5px;
+      color: rgb(152 145 126);
+    }
+    header>ul>li:first-child>a{
+      border-bottom: 4px solid white;
+      color: white;
+    }
+    header>ul>li>a:hover{
+      border-bottom: 4px solid rgb(152 145 126);
+    }
+    section{
+      text-align: center;
+      transform: translatey(-50px);
+    }
+    section>h1{
+      padding:15px;
+      font-size: 2.5em;
+    }
+    section>p{
+      font-size: 1.25em;
+      font-weight: 500;
+      padding:15px;
+    }
+    section>input{
+      width:120px;
+      height: 50px;
+      background-color: white;
+      color: black;
+      font-size: 1em;
+      font-weight: 600;
+      border-style: none;
+      border-radius: 5px;
+    }
+    footer{
+      font-weight: 600;
+      color: rgb(152 145 126);
+      text-shadow: 0.1px 0.1px white;
+      margin-bottom: 1.2em;
+    }
+    footer>a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <h1>Cover</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <h1>Cover your page.</h1>
+    <p>Cover is a one-page template for building simple and beautiful home<br>
+    pages. Download, edit the text, and add your own fullscreen<br>
+    background photo to make it your own.</p>
+    <input type="submit" value="Learn more">
+   
+  </section>
+  <footer>
+    Cover template for <a href="#">Bootstrap</a>, by <a href="#">@mdo.</a>
+  </footer>
+</div>
+</body>
+</html>
