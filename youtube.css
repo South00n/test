@@ -63,7 +63,7 @@ header .icons .fa-solid{
   max-width: 1000px;
 }
 
-body > .info{
+ .infoandlist > .info{
   padding: var(--padding);
 }
 .info .metadata .hashtags{
@@ -118,7 +118,8 @@ body > .info{
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--grey-light-color);
-  border-bottom: 1px solid var(--grey-light-color); 
+  border-bottom: 1px solid var(--grey-light-color);
+  padding: var(--padding);
 
 }
 .info .channelinfo .metadata{
