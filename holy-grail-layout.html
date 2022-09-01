@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+    }
+    .head{
+      background-color: lavender;
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      padding: 20px;
+    }
+    section{
+      display: flex;
+    }
+    .nav{
+      background-color: blanchedalmond;
+    }
+    .main{
+      background-color:rgb(206, 235, 170);
+      padding:10px;
+    }
+    .ad{
+      background-color: rgb(177, 139, 212);
+    }
+    .nav, .ad{
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    .footer{
+      text-align: center;
+      background-color: rgb(207, 157, 157);
+    }
+    @media (max-width:600px) {
+      section{
+        flex-direction: column;
+      }
+      .nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:20px;
+      }
+      .main{
+        order:0
+      }
+      .nav{
+        order:1
+      }
+      .ad{
+        display: none;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <div class="head">head</div>
+    </header>
+    <section>
+      <div class="nav">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+      <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illo aut cumque natus velit quae optio! Modi esse harum odio inventore similique corporis cum consequatur eligendi dolor voluptatum, assumenda provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae officia repudiandae placeat nulla mollitia nisi dolorum accusamus nostrum eaque, illum in commodi minus a amet est culpa, enim ipsam nihil unde rerum. Tempora magni officiis ut at, veritatis ex voluptas impedit deserunt nulla perspiciatis, maiores sapiente error, sequi perferendis optio architecto amet quas? Est, harum, nisi sapiente dolor veritatis numquam odit non reiciendis aperiam alias odio nobis. Suscipit, veniam voluptate illo pariatur minus vitae ipsa perspiciatis? Minima adipisci fugiat repellendus ratione et velit distinctio, aut assumenda, ea ducimus iste vel voluptatum repellat deleniti accusantium qui? Laborum deleniti numquam dicta minus quam, cupiditate at itaque? Rerum ipsa officia natus, tempora excepturi ipsam dolores, incidunt aut iste culpa fugit quisquam tempore, fugiat laudantium nesciunt suscipit dolore nulla quia! Quas quam fugiat dignissimos minima esse velit aut! Corrupti recusandae, deserunt molestias, consequatur reiciendis, architecto ipsum inventore autem fugiat sequi neque! Aliquid nisi itaque atque repellendus, labore reprehenderit commodi eveniet doloremque fugit deserunt quisquam. Error voluptatibus quisquam sed provident nam, modi id tenetur perspiciatis eaque nostrum sequi, ab, pariatur in obcaecati mollitia aspernatur. Corrupti possimus accusamus ex architecto, placeat voluptates alias asperiores eaque consequuntur quia nostrum vitae, aperiam repudiandae omnis. Ullam alias similique dolorum consectetur cumque dignissimos adipisci praesentium officiis qui id! Itaque maxime esse corporquid aspernatur, enim nulla placeat esse ipsa, atque nam dolor iure ab quaerat nobis iusto at in tempora maiores dolore rem. Eveniet harum earum aliquid laudantium voluptas, unde aspernatur dignissimos dolore fuga veniam laboriosam minus sunt amet natus ipsam. Dolor magnam voluptate eius perferendis, mollitia voluptas ad dolorum neque facere fugiat enim modi nisi cum at facilis sit provident labore itaque soluta similique non obcaecati optio! Illo ipsam, blanditiis fugiat debitis dolor neque similique facere perspiciatis odit tenetur deleniti ad. Soluta, nesciunt similique.</div>
+      <div class="ad">ad</div>
+    </section>
+    <footer>
+      <div class="footer">footer</div>
+    </footer>
+  </div>
+
+</body>
+</html>
