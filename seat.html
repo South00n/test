@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var memNum = prompt("입장인원을 적어주세요");
+    var colNum = prompt("한 줄에 몇 명씩 앉을까요?")
+
+    if (memNum % colNum === 0){
+      rowNum = parseInt(memNum / colNum);
+    } else {
+      rowNum = parseInt(memNum / colNum) + 1 ;
+    }
+      document.write("모두 " + rowNum + " 개의 줄이 필요합니다");
+    
+  </script>
+  
+</body>
+</html>
